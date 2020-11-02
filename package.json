@@ -1,0 +1,22 @@
+{
+  "name": "professionalreadmegenerator",
+  "version": "1.0.0",
+  "description": "Command-line application that dynamically generates a professional README.md file from a user's input using Inquirer package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MStuart90/ProfessionalREADMEGenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MStuart90/ProfessionalREADMEGenerator/issues"
+  },
+  "homepage": "https://github.com/MStuart90/ProfessionalREADMEGenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
