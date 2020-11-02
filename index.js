@@ -15,11 +15,11 @@ const promptUser = () => {
       message: 'What is your email?'
     },
     {
-      name: 'Project',
+      name: 'ProjectName',
       message: 'What is your project name?'
     },
     {
-      name: 'Project',
+      name: 'ProjectDescription',
       message: 'Please write a short description of your project'
     },
     {
@@ -51,6 +51,13 @@ const promptUser = () => {
 const generateREADME = (answers) => {
 	return `
 	# ${answers.github}
+	# ${answers.email}
+	# ${answers.ProjectName}
+	# ${answers.ProjectDescription}
+	# ${answers.license}
+	# ${answers.command}
+	# ${answers.Need-to-know}
+	# ${answers.contributing}
 `;
 };
 
