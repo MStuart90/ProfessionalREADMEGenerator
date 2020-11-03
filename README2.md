@@ -1,17 +1,17 @@
 
 ## GitHub username
-# MStuart90
+# Mstuart90
 ## email
 # mmooradian90@yahoo.com
 ## Project Name
-# professionalREADMEGenerator
+# ProfessionalREADMEGenerator
 ## Project Description
-# README Generator
+# Command-line application that dynamically 
 ## License your project has
-# [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## commands you should be run to install dependencies
-# npm i
+# input using Inquirer package.npm install
 ## Information your user needs to know about repo
-# install then run node.js
+# index.js
 ## Information about contributing to this repo
-# open pull request the we will review it
+# Pull request
