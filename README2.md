@@ -1,22 +1,17 @@
 
-	lakg
-
-
-
-
-Badges: 
-
-MIT
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-APACHE 2.0
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-
-GNU GPL v3
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-BSD 3-Clause License
-
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+## GitHub username
+# MSTuart90
+## email
+# mmooradian90@yahoo.com
+## Project Name
+# ProfessionalREADMEGenerator
+## Project Descriptio
+# README generator from command line 
+## License your project has
+# [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+## commands you should be run to install dependencies
+# npm i
+## Information your user needs to know about repo
+# node index.js
+## Information about contributing to this repo
+# pull reqest and review

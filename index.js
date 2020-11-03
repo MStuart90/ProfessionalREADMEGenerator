@@ -37,7 +37,7 @@ const promptUser = () => {
       message: 'What command should be run to install dependencies? (npm i) or npm install',
     },
     {
-      name: 'Need-to-know',
+      name: 'needToKnow',
       message: 'what does the user need to know about the repo? npm install then run node index.js',
     },
     {
@@ -49,51 +49,52 @@ const promptUser = () => {
 };
 
 const generateREADME = (answers) => {
-	return `
-	# ${answers.github}
-	# ${answers.email}
-	# ${answers.ProjectName}
-	# ${answers.ProjectDescription}
-	# ${answers.license}
-	# ${answers.command}
-	# ${answers.Need-to-know}
-	# ${answers.contributing}
+return `
+## GitHub username
+# ${answers.github}
+## email
+# ${answers.email}
+## Project Name
+# ${answers.ProjectName}
+## Project Description
+# ${answers.ProjectDescription}
+## License your project has
+# ${answers.license}
+## commands you should be run to install dependencies
+# ${answers.command}
+## Information your user needs to know about repo
+# ${answers.needToKnow}
+## Information about contributing to this repo
+# ${answers.contributing}
 `;
 };
 
+
+const MIT = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+const APACHE = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+const GNU = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+const BSD = "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+
+
 promptUser()
   .then(answers => {
+   if(answers.license === 'MIT'){
+     answers.license = MIT
+   }else if(answers.license === 'APACHE 2.0') {
+    answers.license = APACHE
+   }else if(answers.license === 'GNU GPL v3') {
+    answers.license = GNU
+   }else if(answers.license === 'BSD 3-Clause License') {
+    answers.license = BSD
+   }
+   
+
 		const README = generateREADME(answers);
 		return writeFileAsync('README2.md', README);
   })
   .then(() => {
-    console.log('Successfully wrote to index.html');
+    console.log('Successfully wrote to README.md');
   })
 	.catch(err => console.log(err));
 	
 
-
-	// promptUser()
-  // .then(answers => {
-  //   const html = generateHTML(answers);
-
-  //   return writeFileAsync('index.html', html);
-  // })
-  // .then(() => {
-  //   console.log('Successfully wrote to index.html');
-  // })
-  // .catch(err => console.log(err));
-
-
-
-	// var fs = require("fs");
-
-	// fs.writeFile("README.md", answers, function(err) {
-	
-	// 	if (err) {
-	// 		return console.log(err);
-	// 	}
-	
-	// 	console.log("Success!");
-	
-	// });
