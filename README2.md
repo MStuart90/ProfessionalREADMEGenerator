@@ -1,17 +1,17 @@
 
 ## GitHub username
-# MSTuart90
+# MStuart90
 ## email
 # mmooradian90@yahoo.com
 ## Project Name
-# ProfessionalREADMEGenerator
-## Project Descriptio
-# README generator from command line 
+# professionalREADMEGenerator
+## Project Description
+# README Generator
 ## License your project has
-# [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+# [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## commands you should be run to install dependencies
 # npm i
 ## Information your user needs to know about repo
-# node index.js
+# install then run node.js
 ## Information about contributing to this repo
-# pull reqest and review
+# open pull request the we will review it
