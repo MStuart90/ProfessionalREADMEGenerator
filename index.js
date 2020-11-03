@@ -50,6 +50,7 @@ const promptUser = () => {
 
 const generateREADME = (answers) => {
 return `
+# Tabel of contents
 ## GitHub username
 # ${answers.github}
 ## email
